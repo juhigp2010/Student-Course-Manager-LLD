@@ -76,7 +76,7 @@ classDiagram
 ## 🛠️ Technology Stack
 
 - **Language:** Java
-- **Java Version:** JDK 26 (Configured in `.idea/misc.xml`. Also backwards-compatible with Java 17+)
+- **Java Version:** JDK 26 (Configured in `.idea/misc.xml`,Also backwards-compatible with Java 17+)
 - **Environment:** Pure Java Console Application (No frameworks or external libraries)
 
 ## 📋 Prerequisites
@@ -91,26 +91,27 @@ Follow these steps to compile and execute the application from the command line:
 
 1. **Navigate to the project directory:**
    ```bash
-   cd /Users/juhi/Airtribe/projects/Student-Course-Manager-LLD
+   cd Student-Course-Manager-LLD
    ```
 
-2. **Create an output directory for compiled classes:**
-   ```bash
-   mkdir -p out
-   ```
+2. **Manual Compilation & Execution:**
+   If you prefer to run the commands manually:
 
-3. **Compile the Java source files:**
-   Compile all `.java` files from the `src` directory into the `out` directory.
-   ```bash
-   javac -d out $(find src -name "*.java")
-   ```
-   *(For Windows Command Prompt, use: `dir /s /B src\*.java > sources.txt` and then `javac -d out @sources.txt`)*
+   *   **Create an output directory:**
+       ```bash
+       mkdir -p out
+       ```
 
-4. **Run the application:**
-   Execute the `Main` class to start the interactive console application.
-   ```bash
-   java -cp out com.airtribe.learntrack.Main
-   ```
+   *   **Compile the Java source files:**
+       ```bash
+       javac -d out $(find src -name "*.java")
+       ```
+
+   *   **Run the application:**
+       ```bash
+       java -cp out com.airtribe.learntrack.Main
+       ```
+
 
 ## 📂 Project Structure
 
